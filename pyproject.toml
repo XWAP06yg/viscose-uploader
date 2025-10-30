@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "viscose-benchmarks"
+version = "0.1.0"
+description = "CLI for configuring and running the Viscose Benchmarks uploader."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Viscose Benchmarks" }]
+license = { text = "Proprietary" }
+dependencies = [
+  "colorama>=0.4",
+  "google-api-python-client>=2.0",
+  "google-auth>=2.0",
+  "google-auth-oauthlib>=0.5",
+]
+
+[project.scripts]
+viscose = "viscose.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["viscose", "viscose_uploader"]

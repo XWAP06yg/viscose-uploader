@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Build artifacts
+build/
+dist/
+*.spec
+!packaging/viscose.spec
+
+# Installer outputs
+packaging/dist/
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Local data
+.env
+*.log
+*.tmp
